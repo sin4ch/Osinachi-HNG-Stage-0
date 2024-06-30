@@ -1,0 +1,133 @@
+/* Reset some default browser styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
+    background-color: #000; /* Black background to contrast with grid */
+    color: #fff; /* Text color */
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Hero section styling */
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><rect width="10" height="10" fill="none" stroke="%23ffb05b" stroke-width="0.5"/></svg>');
+    background-size: 10px 10px; /* Small, tight grid */
+    background-repeat: repeat;
+}
+
+/* Hero content styling */
+.hero-content {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Greeting message styling */
+#greeting {
+    font-size: 3em; /* Larger font size to fill space */
+    margin-bottom: 40px; /* More space between elements */
+    color: #ffb05b; /* Theme color */
+}
+
+/* Main heading styling */
+h1 {
+    font-size: 6em; /* Larger font size to fill space */
+    margin-bottom: 30px; /* More space between elements */
+    letter-spacing: 2px;
+    color: #ffb05b; /* Theme color */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 2em; /* Larger font size to fill space */
+    margin-bottom: 50px; /* More space between elements */
+    color: #fff; /* Light color for contrast */
+}
+
+/* Links section styling */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* More space between buttons */
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+/* Link styling */
+.links a {
+    text-decoration: none;
+    color: #ffb05b; /* Theme color */
+    border: 2px solid #ffb05b; /* Theme border */
+    padding: 15px 50px; /* Larger padding for bigger buttons */
+    border-radius: 50px; /* Pill-shaped buttons */
+    font-size: 1.5em; /* Larger font size */
+    transition: color 0.3s, border-color 0.3s;
+    display: inline-block;
+}
+
+/* Link hover effect */
+.links a:hover {
+    color: #fff; /* Complementary color on hover */
+    border-color: #fff; /* Lighter border on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 10px;
+    }
+
+    #greeting {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .links a {
+        font-size: 1.2em;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 5px;
+    }
+
+    #greeting {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .links a {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+}
